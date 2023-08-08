@@ -2,14 +2,73 @@
 ## Layout Styling
 --------------------------------------------------------------*/
 
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Manrope:wght@400;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+::after,
+::before {
+  font: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilda Display", serif;
+  line-height: 1.1;
+}
+
+h1,
+.h1 {
+  font-size: 7.2rem;
+  @media (width <= 768px) {
+    font-size: 4rem;
+  }
+}
+
+.title {
+  margin-block: 4rem;
+}
+
+.serif {
+  font-family: "Gilda Display", serif;
+}
+
+main {
+  position: relative;
+  background-color: var(--primary);
+  z-index: 2;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
-    color: #000;
-    font-size: 14px;
-    font-family: sans-serif;
-    -webkit-font-smoothing: antialiased;
-    ::selection {
-        background: #d2fd78;
-    } 
-} 
+  background-color: var(--primary);
+  color: var(--text);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  ::selection {
+    background: #9a93ad;
+  }
+}
+
+.footer--wrapper {
+  z-index: 1;
+  margin-top: -100vh;
+}
